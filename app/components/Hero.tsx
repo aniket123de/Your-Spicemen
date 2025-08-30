@@ -18,7 +18,7 @@ function Hero() {
                 className="w-full h-full object-cover object-[50%_50%]"
               />
               <div className="absolute inset-0 bg-[rgba(0,0,0,.327)] hover:bg-[rgba(0,0,0,.521)] transition-all duration-300 ease-linear flex items-end p-4 z-10">
-                <h1 className="text-white text-xl font-semibold lg:text-3xl">
+                <h1 className="text-white text-xl font-semibold lg:text-3xl font-playfair">
                   {data.text}
                 </h1>
               </div>

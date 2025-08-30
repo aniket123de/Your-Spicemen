@@ -16,18 +16,18 @@ function CategoryHero({ category }: { category: string }) {
               : "gap-16 lg:gap-[30rem]"
           }`}
         >
-          <Link href="/" className="flex items-center gap-2 lg:text-xl">
+          <Link href="/" className="flex items-center gap-2 lg:text-xl font-inter">
             <span>{"<"}</span>
             <span>Home</span>
           </Link>
-          <h1 className="uppercase font-bold text-[1.75rem]">{category}</h1>
+          <h1 className="uppercase font-bold text-[1.75rem] font-playfair tracking-wider">{category}</h1>
         </div>
         <div className="flex justify-center gap-2 items-center flex-wrap">
           {categories.map((data) => (
             <Link
               href={data.url}
               key={data.id}
-              className={`border-2 border-[rgba(0,0,0,.205)] py-1 px-4 ${
+              className={`border-2 border-[rgba(0,0,0,.205)] py-1 px-4 font-inter font-medium ${
                 usePathname() === data.url
                   ? "bg-black border-black text-white"
                   : ""

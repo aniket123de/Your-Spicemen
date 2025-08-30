@@ -29,10 +29,10 @@ function CartItem({
           className="w-full lg:w-28"
         />
       </div>
-      <div className="basis-3/4 lg:basis-5/6 p-4 bg-[#e5e5e5] flex justify-between gap-8">
+            <div className="basis-3/4 lg:basis-5/6 p-4 bg-primary-300 flex justify-between gap-8">
         <div className="flex flex-col gap-4 justify-between">
           <div>
-            <h1 className="text-xl">{product}</h1>
+            <h1 className="text-xl font-playfair font-semibold">{product}</h1>
           </div>
           <div className="flex">
             <button
@@ -46,7 +46,7 @@ function CartItem({
                   setCart(newAmount);
                 }
               }}
-              className="bg-white w-6 h-6 flex items-center justify-center border-t border-l border-b border-black hover:bg-transparent transition-all duration-300 ease-linear text-xl"
+              className="bg-primary-50 w-6 h-6 flex items-center justify-center border-t border-l border-b border-black hover:bg-transparent transition-all duration-300 ease-linear text-xl"
             >
               -
             </button>
@@ -62,7 +62,7 @@ function CartItem({
                 );
                 setCart(newAmount);
               }}
-              className="bg-white w-6 h-6 flex items-center justify-center border-t border-r border-b border-black hover:bg-transparent transition-all duration-300 ease-linear text-xl"
+              className="bg-primary-50 w-6 h-6 flex items-center justify-center border-t border-r border-b border-black hover:bg-transparent transition-all duration-300 ease-linear text-xl"
             >
               +
             </button>
@@ -70,7 +70,7 @@ function CartItem({
         </div>
         <div className="flex flex-col items-end justify-between">
           <div>
-            <h1 className="text-xl font-semibold">${price * amount}</h1>
+            <h1 className="text-xl font-semibold font-playfair">${price * amount}</h1>
           </div>
           <div>
             <button

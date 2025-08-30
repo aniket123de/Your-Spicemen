@@ -4,24 +4,24 @@ import React from "react";
 function Footer() {
   return (
     <footer className="mt-16">
-      <div className="bg-[#191919] py-16 px-20 flex items-center justify-center">
+      <div className="bg-primary-800 py-16 px-20 flex items-center justify-center">
         <div className="w-full space-y-6">
-          <h1 className="text-3xl font-bold text-white text-center">
+          <h1 className="text-3xl font-bold text-white text-center font-playfair">
             Newsletter
           </h1>
           <div className="flex flex-col lg:flex-row lg:justify-center gap-2">
             <input
               type="email"
               placeholder="your@email.com"
-              className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60"
+              className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60 font-inter"
             />
-            <button className="bg-[#e5e5e5] text-lg px-1 py-1 lg:px-2">
+            <button className="bg-primary-400 text-lg px-1 py-1 lg:px-2 font-inter">
               Subscribe
             </button>
           </div>
         </div>
       </div>
-      <div className="bg-black p-8 flex justify-center flex-wrap gap-6 text-white text-lg">
+      <div className="bg-primary-900 p-8 flex justify-center flex-wrap gap-6 text-white text-lg font-inter">
         <Link href="/" className="hover:underline">
           About
         </Link>

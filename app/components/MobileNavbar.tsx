@@ -11,7 +11,7 @@ function MobileNavbar() {
 
   return (
     <nav
-      className={`fixed inset-y-0 right-0 bg-[#e5e5e5] ${
+      className={`fixed inset-y-0 right-0 bg-primary-300 ${
         mobileNavbar ? "left-0" : "left-[150%]"
       } z-50 transition-all duration-300 ease-linear p-8 flex items-center justify-center flex-col`}
     >

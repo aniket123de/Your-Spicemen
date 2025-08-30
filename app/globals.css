@@ -2,15 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-primary-200 font-dancing;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+  
+  button, input, select, textarea {
+    @apply font-inter;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
+  background: #D1C2AA;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background-color: #fff;
+  background-color: #E8DDD0;
 }

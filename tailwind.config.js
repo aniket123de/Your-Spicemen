@@ -6,7 +6,27 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': {
+          50: '#FAF7F3',   // lightest shade
+          100: '#F5F0EA',  // very light
+          200: '#F0E9E0',  // main color
+          300: '#E8DDD0',  // slightly darker
+          400: '#DDD0BD',  // medium light
+          500: '#D1C2AA',  // medium
+          600: '#C4B497',  // medium dark
+          700: '#B5A584',  // darker
+          800: '#A39471',  // very dark
+          900: '#8F825E',  // darkest
+        }
+      },
+      fontFamily: {
+        'dancing': ['var(--font-dancing)', 'cursive'],
+        'playfair': ['var(--font-playfair)', 'serif'],
+        'inter': ['var(--font-inter)', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 };

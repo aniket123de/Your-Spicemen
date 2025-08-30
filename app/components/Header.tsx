@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 bg-white z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
+      className="fixed inset-x-0 top-0 bg-primary-50 z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
       ref={headerRef}
     >
       <div className="flex items-center justify-between px-6 py-4 max-w-screen-xl w-full m-auto">
@@ -48,7 +48,7 @@ function Header() {
               <Link
                 key={data.id}
                 href={data.url}
-                className="uppercase text-lg hover:underline hidden lg:inline-block"
+                className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide"
               >
                 {data.category}
               </Link>

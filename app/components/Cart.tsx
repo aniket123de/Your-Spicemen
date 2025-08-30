@@ -21,9 +21,9 @@ function Cart() {
         onClick={() => setCartOpen(false)}
         className="hidden lg:block absolute inset-y-0 left-0 right-[50%] z-[1000]"
       ></div>
-      <div className="absolute bg-white inset-y-0 right-0 left-0 lg:left-[50%] p-6 flex flex-col justify-between gap-8 overflow-y-scroll z-[1000]">
+      <div className="absolute bg-primary-50 inset-y-0 right-0 left-0 lg:left-[50%] p-6 flex flex-col justify-between gap-8 overflow-y-scroll z-[1000]">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-xl font-bold font-playfair">
             Your Shopping Cart ({cart.length})
           </h1>
           <button onClick={() => setCartOpen(false)} className="text-[1.7rem]">
@@ -45,8 +45,8 @@ function Cart() {
             </div>
             <div className="border-t-2 border-dashed border-black pt-2 space-y-6">
               <div className="text-2xl font-semibold flex items-center justify-between">
-                <h1>Subtotal:</h1>
-                <h1>
+                <h1 className="font-playfair">Subtotal:</h1>
+                <h1 className="font-playfair">
                   $
                   {cart.reduce(
                     (accumulator, currentValue) =>
@@ -56,7 +56,7 @@ function Cart() {
                 </h1>
               </div>
               <div className="flex justify-center">
-                <button className="bg-black text-white py-2 px-8 text-xl border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300 ease-linear">
+                <button className="bg-black text-white py-2 px-8 text-xl border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300 ease-linear font-inter font-semibold tracking-wider">
                   Checkout
                 </button>
               </div>
@@ -81,7 +81,7 @@ function Cart() {
             </div>
             <button
               onClick={() => setCartOpen(false)}
-              className="bg-[#e5e5e5] p-2 border border-black text-lg"
+              className="bg-primary-400 p-2 border border-black text-lg"
             >
               Keep Browsing
             </button>

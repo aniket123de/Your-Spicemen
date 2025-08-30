@@ -64,19 +64,19 @@ function ProductDetail({
               ))}
             </div>
           </div>
-          <div className="p-6 lg:p-12 bg-[#e5e5e5] space-y-8 lg:space-y-16">
+          <div className="p-6 lg:p-12 bg-primary-300 space-y-8 lg:space-y-16">
             <div className="space-y-8">
-              <h1 className="text-3xl font-bold">{name}</h1>
-              <p className="text-lg lg:text-xl">{description}</p>
+              <h1 className="text-3xl font-bold font-playfair">{name}</h1>
+              <p className="text-lg lg:text-xl font-dancing">{description}</p>
             </div>
             <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-4">
               <div>
-                <p className="font-semibold text-2xl">Quantity</p>
+                <p className="font-semibold text-2xl font-playfair">Quantity</p>
               </div>
               <div className="flex justify-center text-3xl font-semibold">
                 <button
                   onClick={() => (amount > 1 ? setAmount(amount - 1) : null)}
-                  className="bg-white w-14 h-14 flex items-center justify-center border-t border-l border-b border-black hover:bg-transparent transition-all duration-300 ease-linear"
+                  className="bg-primary-50 w-14 h-14 flex items-center justify-center border-t border-l border-b border-black hover:bg-transparent transition-all duration-300 ease-linear"
                 >
                   -
                 </button>
@@ -85,7 +85,7 @@ function ProductDetail({
                 </p>
                 <button
                   onClick={() => setAmount(amount + 1)}
-                  className="bg-white w-14 h-14 flex items-center justify-center border-t border-r border-b border-black hover:bg-transparent transition-all duration-300 ease-linear"
+                  className="bg-primary-50 w-14 h-14 flex items-center justify-center border-t border-r border-b border-black hover:bg-transparent transition-all duration-300 ease-linear"
                 >
                   +
                 </button>
@@ -117,28 +117,28 @@ function ProductDetail({
                   }
                   setCartOpen(true);
                 }}
-                className="border-2 border-black p-3 transition-all duration-300 ease-linear hover:bg-black hover:text-white"
+                className="border-2 border-black p-3 transition-all duration-300 ease-linear hover:bg-black hover:text-white font-inter font-semibold tracking-wider"
               >
                 ADD TO CART
               </button>
-              <button className="border-2 border-[#b6002c] bg-[#b6002c] text-white p-3 transition-all duration-300 ease-linear hover:bg-transparent hover:text-[#b6002c]">
+              <button className="border-2 border-[#b6002c] bg-[#b6002c] text-white p-3 transition-all duration-300 ease-linear hover:bg-transparent hover:text-[#b6002c] font-inter font-semibold tracking-wider">
                 BUY NOW
               </button>
             </div>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div className="bg-[#e5e5e5] p-4">
-            <h1 className="text-[1.35rem] font-semibold">Texture:</h1>
-            <p className="text-lg">{texture}</p>
+          <div className="bg-primary-300 p-4">
+            <h1 className="text-[1.35rem] font-semibold font-playfair">Texture:</h1>
+            <p className="text-lg font-dancing">{texture}</p>
           </div>
-          <div className="bg-[#e5e5e5] p-4">
-            <h1 className="text-[1.35rem] font-semibold">Weight:</h1>
-            <p className="text-lg">{weight}</p>
+          <div className="bg-primary-300 p-4">
+            <h1 className="text-[1.35rem] font-semibold font-playfair">Weight:</h1>
+            <p className="text-lg font-dancing">{weight}</p>
           </div>
-          <div className="bg-[#e5e5e5] p-4">
-            <h1 className="text-[1.35rem] font-semibold">Size:</h1>
-            <p className="text-lg">{size}</p>
+          <div className="bg-primary-300 p-4">
+            <h1 className="text-[1.35rem] font-semibold font-playfair">Size:</h1>
+            <p className="text-lg font-dancing">{size}</p>
           </div>
         </div>
       </div>
