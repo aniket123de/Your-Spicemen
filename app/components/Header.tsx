@@ -30,25 +30,26 @@ function Header() {
       className="fixed inset-x-0 top-0 bg-primary-50 z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
       ref={headerRef}
     >
-      <div className="flex items-center justify-between px-6 py-4 max-w-screen-xl w-full m-auto">
-        <div>
-          <Link href="/">
+      <div className="flex items-center justify-between px-6 py-2 max-w-screen-xl w-full m-auto h-full">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/logo/logo.png"
               alt="logo"
-              width={120}
-              height={48}
+              width={160}
+              height={80}
               priority
+              className="max-h-16 w-auto object-contain"
             />
           </Link>
         </div>
-        <div className="flex items-center gap-6 text-2xl">
+        <div className="flex items-center gap-6 text-2xl text-[#775636]">
           {categories.map((data) =>
             data.category === "All" ? null : (
               <Link
                 key={data.id}
                 href={data.url}
-                className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide"
+                className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide text-[#775636]"
               >
                 {data.category}
               </Link>

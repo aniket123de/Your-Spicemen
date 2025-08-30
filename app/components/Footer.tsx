@@ -13,15 +13,15 @@ function Footer() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60 font-inter"
+              className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60 font-dancing"
             />
-            <button className="bg-primary-400 text-lg px-1 py-1 lg:px-2 font-inter">
+            <button className="bg-primary-400 text-lg px-1 py-1 lg:px-2 font-playfair font-semibold">
               Subscribe
             </button>
           </div>
         </div>
       </div>
-      <div className="bg-primary-900 p-8 flex justify-center flex-wrap gap-6 text-white text-lg font-inter">
+      <div className="bg-primary-900 p-8 flex justify-center flex-wrap gap-6 text-white text-lg font-dancing">
         <Link href="/" className="hover:underline">
           About
         </Link>

@@ -19,7 +19,8 @@ module.exports = {
           700: '#B5A584',  // darker
           800: '#A39471',  // very dark
           900: '#8F825E',  // darkest
-        }
+        },
+        'text-brown': '#775636'
       },
       fontFamily: {
         'dancing': ['var(--font-dancing)', 'cursive'],
