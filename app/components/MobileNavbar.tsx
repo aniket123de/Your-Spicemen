@@ -4,7 +4,7 @@ import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useTogglerContext } from "../context/toggler";
 import Link from "next/link";
-import { categories } from "../data/data";
+import { navItems } from "../data/data";
 
 function MobileNavbar() {
   const { mobileNavbar, setMobileNavbar } = useTogglerContext();
@@ -22,21 +22,21 @@ function MobileNavbar() {
         <AiOutlineClose />
       </button>
       <ul className="flex flex-col items-center gap-8 font-medium text-2xl">
-        {categories.map((data) =>
-          data.category === "All" ? null : (
-            <li key={data.id}>
-              <Link
-                href={data.url}
-                onClick={() => {
-                  setMobileNavbar(false);
-                }}
-                className="uppercase"
-              >
-                {data.category}
-              </Link>
-            </li>
-          )
-        )}
+        {Array.isArray(navItems)
+          ? navItems.map((data) => (
+              <li key={data.id}>
+                <Link
+                  href={data.url}
+                  onClick={() => {
+                    setMobileNavbar(false);
+                  }}
+                  className="uppercase"
+                >
+                  {data.category}
+                </Link>
+              </li>
+            ))
+          : null}
       </ul>
     </nav>
   );

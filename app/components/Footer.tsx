@@ -7,7 +7,7 @@ function Footer() {
       <div className="bg-primary-800 py-16 px-20 flex items-center justify-center">
         <div className="w-full space-y-6">
           <h1 className="text-3xl font-bold text-white text-center font-playfair">
-            Newsletter
+            Spice & Tea Newsletter
           </h1>
           <div className="flex flex-col lg:flex-row lg:justify-center gap-2">
             <input
@@ -16,26 +16,26 @@ function Footer() {
               className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60 font-dancing"
             />
             <button className="bg-primary-400 text-lg px-1 py-1 lg:px-2 font-playfair font-semibold">
-              Subscribe
+              Subscribe for Recipes
             </button>
           </div>
         </div>
       </div>
       <div className="bg-primary-900 p-8 flex justify-center flex-wrap gap-6 text-white text-lg font-dancing">
         <Link href="/" className="hover:underline">
-          About
+          About Our Spices
         </Link>
         <Link href="/" className="hover:underline">
-          Store Location
+          Tea Gardens
         </Link>
         <Link href="/" className="hover:underline">
-          FAQs
+          Recipes & Tips
         </Link>
         <Link href="/" className="hover:underline">
-          News
+          Bulk Orders
         </Link>
         <Link href="/" className="hover:underline">
-          Careers
+          Quality Promise
         </Link>
         <Link href="/" className="hover:underline">
           Contact Us

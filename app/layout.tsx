@@ -25,9 +25,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Raouf Store",
+  title: "Your Spicemen - Premium Masalas & Authentic Teas",
   description:
-    "eCommerce website that minimalistic and simple design lifestyle enthusiasts can buy from",
+    "Discover the finest collection of authentic Indian masalas, premium spices, and traditional teas. From aromatic garam masala to Kashmir's finest saffron and Darjeeling tea.",
 };
 
 export default function RootLayout({

@@ -17,15 +17,15 @@ export default function Home() {
         <Hero />
         <Proud />
         <Banner
-          title="Creative harmonious living"
-          content="RAOUF Products are all made to standard sizes so that you can mix and match them freely."
+          title="Authentic Spice Heritage"
+          content="Handpicked masalas and premium spices sourced directly from Indian farms. Each blend carries centuries of culinary tradition."
           img="/images/banner/img-1.jpg"
         />
         <Trending />
         <Banner
           imgFirst
-          title="Comfortable & Elegante Living"
-          content="RAOUF Products are all made to standard sizes so that you can mix and match them freely."
+          title="Premium Tea Collection"
+          content="From the gardens of Darjeeling to the hills of Assam, discover teas that awaken your senses with every sip."
           img="/images/banner/img-2.jpg"
         />
       </div>

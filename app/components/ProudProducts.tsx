@@ -12,17 +12,19 @@ function Proud() {
           Products we are proud of
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          {products
-            .filter((data) => data.proud)
-            .map((data) => (
-              <ItemCard
-                key={data.id}
-                img={data.img.display}
-                name={data.name}
-                price={data.price}
-                url={data.url}
-              />
-            ))}
+          {Array.isArray(products)
+            ? products
+                .filter((data) => data.proud)
+                .map((data) => (
+                  <ItemCard
+                    key={data.id}
+                    img={data.img.display}
+                    name={data.name}
+                    price={data.price}
+                    url={data.url}
+                  />
+                ))
+            : null}
         </div>
       </div>
     </section>

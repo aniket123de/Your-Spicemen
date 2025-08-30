@@ -6,7 +6,7 @@ import React, { useEffect, useRef } from "react";
 import { RiShoppingCartLine, RiMenu3Fill } from "react-icons/ri";
 import { useTogglerContext } from "../context/toggler";
 import { useCartContext } from "../context/cart";
-import { categories } from "../data/data";
+import { navItems } from "../data/data";
 
 function Header() {
   const { setMobileNavbar, setCartOpen } = useTogglerContext();
@@ -44,17 +44,17 @@ function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-6 text-2xl text-[#775636]">
-          {categories.map((data) =>
-            data.category === "All" ? null : (
-              <Link
-                key={data.id}
-                href={data.url}
-                className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide text-[#775636]"
-              >
-                {data.category}
-              </Link>
-            )
-          )}
+          {Array.isArray(navItems)
+            ? navItems.map((data) => (
+                <Link
+                  key={data.id}
+                  href={data.url}
+                  className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide text-[#775636]"
+                >
+                  {data.category}
+                </Link>
+              ))
+            : null}
           <div className="relative">
             <button onClick={() => setCartOpen(true)}>
               <RiShoppingCartLine />

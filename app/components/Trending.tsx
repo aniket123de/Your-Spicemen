@@ -38,18 +38,20 @@ function Trending() {
           className="flex gap-4 overflow-x-auto scroll-smooth"
           ref={sliderRef}
         >
-          {products
-            .filter((data) => data.trending)
-            .map((data) => (
-              <ItemCard
-                key={data.id}
-                img={data.img.display}
-                name={data.name}
-                price={data.price}
-                slider
-                url={data.url}
-              />
-            ))}
+          {Array.isArray(products)
+            ? products
+                .filter((data) => data.trending)
+                .map((data) => (
+                  <ItemCard
+                    key={data.id}
+                    img={data.img.display}
+                    name={data.name}
+                    price={data.price}
+                    slider
+                    url={data.url}
+                  />
+                ))
+            : null}
         </div>
       </div>
     </section>
