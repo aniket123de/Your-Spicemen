@@ -25,9 +25,18 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Your Spicemen - Premium Masalas & Authentic Teas",
+  title: "Your Spicemen - Premium Indian Masalas & Authentic Tea Collection",
   description:
-    "Discover the finest collection of authentic Indian masalas, premium spices, and traditional teas. From aromatic garam masala to Kashmir's finest saffron and Darjeeling tea.",
+    "Discover the finest authentic Indian masalas and premium tea blends at Your Spicemen. From aromatic garam masala to Kashmiri lal mirch, Darjeeling tea to heritage chai blends. Handpicked spices and tea leaves sourced directly from Indian farms for authentic flavors in your kitchen.",
+  keywords: "Indian masala, authentic spices, premium tea, garam masala, turmeric powder, kashmiri red chili, darjeeling tea, chai blend, organic spices, herbal tea, traditional masala, spice store online",
+  author: "Your Spicemen",
+  robots: "index, follow",
+  openGraph: {
+    title: "Your Spicemen - Premium Indian Masalas & Authentic Tea Collection",
+    description: "Handpicked Indian masalas and premium tea blends. Authentic flavors delivered to your doorstep.",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function RootLayout({
