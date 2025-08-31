@@ -1,7 +1,7 @@
 import { CartProvider } from "./context/cart";
 import { TogglerProvider } from "./context/toggler";
 import "./globals.css";
-import { Dancing_Script, Playfair_Display, Inter } from "next/font/google";
+import { Dancing_Script, Cormorant_Garamond, Inter } from "next/font/google";
 
 // Elegant cursive font for body text
 const dancingScript = Dancing_Script({
@@ -10,11 +10,11 @@ const dancingScript = Dancing_Script({
   variable: "--font-dancing",
 });
 
-// Stylish serif font for headers
-const playfairDisplay = Playfair_Display({
-  weight: ["400", "500", "600", "700", "800", "900"],
+// Elegant serif font for headers
+const cormorantGaramond = Cormorant_Garamond({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-elegant",
 });
 
 // Clean sans-serif for UI elements
@@ -48,7 +48,7 @@ export default function RootLayout({
     <TogglerProvider>
       <CartProvider>
         <html lang="en" className="scroll-smooth">
-          <body className={`${dancingScript.variable} ${playfairDisplay.variable} ${inter.variable} font-dancing bg-primary-200 min-h-screen`}>{children}</body>
+          <body className={`${dancingScript.variable} ${cormorantGaramond.variable} ${inter.variable} font-dancing bg-primary-200 min-h-screen`}>{children}</body>
         </html>
       </CartProvider>
     </TogglerProvider>

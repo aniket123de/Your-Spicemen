@@ -70,7 +70,7 @@ function CartItem({
         </div>
         <div className="flex flex-col items-end justify-between">
           <div>
-            <h1 className="text-xl font-semibold font-playfair">${price * amount}</h1>
+            <h1 className="text-xl font-semibold font-playfair">₹{price * amount}</h1>
           </div>
           <div>
             <button

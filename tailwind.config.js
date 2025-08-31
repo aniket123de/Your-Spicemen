@@ -24,8 +24,9 @@ module.exports = {
       },
       fontFamily: {
         'dancing': ['var(--font-dancing)', 'cursive'],
-        'playfair': ['var(--font-playfair)', 'serif'],
+        'playfair': ['var(--font-elegant)', 'serif'],
         'inter': ['var(--font-inter)', 'sans-serif'],
+        'elegant': ['var(--font-elegant)', 'serif'],
       }
     },
   },

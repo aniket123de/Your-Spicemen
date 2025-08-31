@@ -91,7 +91,7 @@ function ProductDetail({
                 </button>
               </div>
               <div>
-                <p className="font-semibold text-2xl">${price}</p>
+                <p className="font-semibold text-2xl">₹{price}</p>
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 font-semibold text-xl">

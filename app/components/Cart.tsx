@@ -47,7 +47,7 @@ function Cart() {
               <div className="text-2xl font-semibold flex items-center justify-between">
                 <h1 className="font-playfair">Subtotal:</h1>
                 <h1 className="font-playfair">
-                  $
+                  ₹
                   {cart.reduce(
                     (accumulator, currentValue) =>
                       accumulator + currentValue.price * currentValue.amount,

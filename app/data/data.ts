@@ -26,7 +26,7 @@ export const products = [
     id: "hingraj",
     name: "Hingraj",
     img: {
-      display: "/images/Masala Images/PURE GARAM MASALA/1.jpg",
+      display: "/images/Masala Images/PURE GARAM MASALA/3.jpg",
       details: [
         { id: 1, src: "/images/Masala Images/PURE GARAM MASALA/1.jpg" },
         { id: 2, src: "/images/Masala Images/PURE GARAM MASALA/2.jpg" },

@@ -34,7 +34,7 @@ function ItemCard({
         </div>
         <div className="m-4 space-y-2">
           <h3 className="font-medium text-lg">{name}</h3>
-          <h1 className="font-semibold text-xl">${price}</h1>
+          <h1 className="font-semibold text-xl">₹{price}</h1>
         </div>
       </Link>
     </div>

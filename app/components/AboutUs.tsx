@@ -11,7 +11,7 @@ function AboutUs() {
         <div className="relative order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/images/Aboutus.png"
+              src="/images/Aboutus.jpg"
               alt="Your Spicemen - Premium Spices and Tea"
               width={600}
               height={500}
@@ -19,9 +19,6 @@ function AboutUs() {
               priority
             />
           </div>
-          {/* Decorative Elements */}
-          <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-100 rounded-full opacity-60 hidden lg:block"></div>
-          <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-orange-50 rounded-full opacity-40 hidden lg:block"></div>
         </div>
 
         {/* Content Side */}
@@ -31,15 +28,15 @@ function AboutUs() {
               <div className="w-12 h-1 bg-amber-500"></div>
               <span className="text-amber-600 font-semibold text-sm uppercase tracking-wider">About Us</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 font-playfair leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 font-playfair leading-tight">
               Your Trusted
-              <span className="block text-amber-600">Spice Partner</span>
+              <span className="block text-amber-800">Spice Partner</span>
             </h2>
           </div>
 
-          <div className="space-y-6 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-amber-800 leading-relaxed">
             <p className="text-lg">
-              At <strong className="text-gray-800">Your Spicemen</strong>, we believe that authentic flavors tell stories. 
+              At <strong className="text-amber-900">Your Spicemen</strong>, we believe that authentic flavors tell stories. 
               For generations, we have been curating the finest spices and tea blends, sourced directly from 
               the pristine gardens and farms across India.
             </p>
@@ -66,8 +63,8 @@ function AboutUs() {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-1">Premium Quality</h4>
-                <p className="text-sm text-gray-600">Handpicked and carefully processed spices</p>
+                <h4 className="font-semibold text-amber-900 mb-1">Premium Quality</h4>
+                <p className="text-sm text-amber-700">Handpicked and carefully processed spices</p>
               </div>
             </div>
 
@@ -78,8 +75,8 @@ function AboutUs() {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-1">Authentic Sourcing</h4>
-                <p className="text-sm text-gray-600">Direct from farms and gardens across India</p>
+                <h4 className="font-semibold text-amber-900 mb-1">Authentic Sourcing</h4>
+                <p className="text-sm text-amber-700">Direct from farms and gardens across India</p>
               </div>
             </div>
 
@@ -90,8 +87,8 @@ function AboutUs() {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-1">Traditional Methods</h4>
-                <p className="text-sm text-gray-600">Time-honored processing techniques</p>
+                <h4 className="font-semibold text-amber-900 mb-1">Traditional Methods</h4>
+                <p className="text-sm text-amber-700">Time-honored processing techniques</p>
               </div>
             </div>
 
@@ -102,8 +99,8 @@ function AboutUs() {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-1">Fair Trade</h4>
-                <p className="text-sm text-gray-600">Supporting local farmers and communities</p>
+                <h4 className="font-semibold text-amber-900 mb-1">Fair Trade</h4>
+                <p className="text-sm text-amber-700">Supporting local farmers and communities</p>
               </div>
             </div>
           </div>
