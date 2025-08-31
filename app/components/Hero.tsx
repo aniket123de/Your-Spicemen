@@ -12,20 +12,20 @@ function Hero() {
           {/* Left Side - Text Content */}
           <div className="space-y-6 lg:pr-8">
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-elegant leading-tight text-amber-900">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-elegant leading-tight" style={{ color: '#775636' }}>
               Your
-              <span className="block text-amber-700">
+              <span className="block" style={{ color: '#775636' }}>
                 Spicemen
               </span>
             </h1>
             
             {/* Subtitle */}
-            <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed text-amber-800">
+            <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed" style={{ color: '#775636' }}>
               Premium Authentic Spices & Traditional Tea Blends
             </p>
             
             {/* Description */}
-            <p className="text-base md:text-lg leading-relaxed text-amber-700 max-w-lg">
+            <p className="text-base md:text-lg leading-relaxed max-w-lg" style={{ color: '#775636' }}>
               Discover the finest collection of handpicked spices and artisanal tea blends, 
               sourced directly from the best gardens and farms across India.
             </p>
@@ -34,7 +34,10 @@ function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/categories/all"
-                className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2 justify-center min-w-[200px]"
+                className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2 justify-center min-w-[200px]"
+                style={{ backgroundColor: '#775636' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a412a'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#775636'}
               >
                 Explore Products
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,7 +47,16 @@ function Hero() {
               
               <Link
                 href="/about"
-                className="border-2 border-amber-500 text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center min-w-[200px]"
+                className="border-2 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center min-w-[200px]"
+                style={{ borderColor: '#775636', color: '#775636' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#775636';
+                  e.currentTarget.style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.color = '#775636';
+                }}
               >
                 Our Story
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
