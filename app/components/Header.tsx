@@ -27,47 +27,74 @@ function Header() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 bg-primary-50 z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
+      className="fixed inset-x-0 top-0 bg-white z-50 shadow-lg border-b border-gray-100 flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
       ref={headerRef}
     >
       <div className="flex items-center justify-between px-6 py-2 max-w-screen-xl w-full m-auto h-full">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo/logo.png"
-              alt="logo"
-              width={160}
-              height={80}
-              priority
-              className="max-h-16 w-auto object-contain"
-            />
+          <Link href="/" className="flex items-center group">
+            <div className="relative overflow-hidden rounded-xl p-3 transition-all duration-500">
+              <Image
+                src="/images/logo/logo.png"
+                alt="logo"
+                width={160}
+                height={80}
+                priority
+                className="max-h-16 w-auto object-contain transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
           </Link>
         </div>
-        <div className="flex items-center gap-6 text-2xl text-[#775636]">
+        
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-2">
           {Array.isArray(navItems)
-            ? navItems.map((data) => (
+            ? navItems.map((data, index) => (
                 <Link
                   key={data.id}
                   href={data.url}
-                  className="uppercase text-lg hover:underline hidden lg:inline-block font-playfair font-semibold tracking-wide text-[#775636]"
+                  className="relative group px-6 py-3 text-lg font-playfair font-semibold tracking-wide text-[#775636] hover:text-amber-700 transition-all duration-500 rounded-xl overflow-hidden"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  {data.category}
+                  <span className="relative z-10 uppercase transition-all duration-300 group-hover:tracking-wider">
+                    {data.category}
+                  </span>
+                  
+                  {/* Background hover effect */}
+                  <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 transition-all duration-500 origin-center rounded-xl"></div>
+                  
+                  {/* Bottom border animation */}
+                  <div className="absolute bottom-1 left-1/2 w-0 h-1 bg-amber-500 group-hover:w-4/5 group-hover:left-[10%] transition-all duration-500 rounded-full"></div>
                 </Link>
               ))
             : null}
-          <div className="relative">
-            <button onClick={() => setCartOpen(true)}>
-              <RiShoppingCartLine />
+        </nav>
+
+        {/* Action Items */}
+        <div className="flex items-center gap-4 text-2xl text-[#775636]">
+          {/* Cart Button */}
+          <div className="relative group">
+            <button 
+              onClick={() => setCartOpen(true)}
+              className="relative p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-xl border border-amber-200 hover:border-amber-300 transition-all duration-500 transform hover:scale-110"
+            >
+              <RiShoppingCartLine className="text-[#775636] group-hover:text-amber-700 transition-all duration-300 transform group-hover:scale-110" />
+              
+              {cart.length > 0 ? (
+                <span className="absolute -top-2 -right-2 bg-red-600 w-7 h-7 rounded-full text-white flex items-center justify-center text-sm font-bold shadow-xl animate-bounce border-3 border-white transform hover:scale-110 transition-transform duration-300">
+                  {cart.length}
+                </span>
+              ) : null}
             </button>
-            {cart.length > 0 ? (
-              <span className="absolute -top-3 z-50 -right-1 bg-[#b6002c] w-5 h-5 rounded-full text-white flex items-center justify-center text-[0.95rem]">
-                {cart.length}
-              </span>
-            ) : null}
           </div>
+          
+          {/* Mobile Menu Button */}
           <div className="lg:hidden">
-            <button onClick={() => setMobileNavbar(true)}>
-              <RiMenu3Fill />
+            <button 
+              onClick={() => setMobileNavbar(true)}
+              className="p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-xl border border-amber-200 hover:border-amber-300 transition-all duration-500 transform hover:scale-110 group"
+            >
+              <RiMenu3Fill className="text-[#775636] group-hover:text-amber-700 transition-all duration-300 transform group-hover:rotate-180" />
             </button>
           </div>
         </div>
