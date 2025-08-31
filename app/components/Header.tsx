@@ -76,7 +76,7 @@ function Header() {
           <div className="relative group">
             <button 
               onClick={() => setCartOpen(true)}
-              className="relative p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-xl border border-amber-200 hover:border-amber-300 transition-all duration-500 transform hover:scale-110"
+              className="relative p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-xl border border-amber-200 hover:border-amber-300 transition-all duration-500 transform hover:scale-110 lg:bg-amber-50 lg:hover:bg-amber-100 lg:shadow-lg lg:hover:shadow-xl lg:border lg:border-amber-200 lg:hover:border-amber-300 lg:rounded-2xl sm:bg-transparent sm:hover:bg-transparent sm:shadow-none sm:hover:shadow-none sm:border-none sm:hover:border-none sm:rounded-none"
             >
               <RiShoppingCartLine className="text-[#775636] group-hover:text-amber-700 transition-all duration-300 transform group-hover:scale-110" />
               
@@ -92,7 +92,7 @@ function Header() {
           <div className="lg:hidden">
             <button 
               onClick={() => setMobileNavbar(true)}
-              className="p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 shadow-lg hover:shadow-xl border border-amber-200 hover:border-amber-300 transition-all duration-500 transform hover:scale-110 group"
+              className="p-4 bg-transparent hover:bg-transparent shadow-none hover:shadow-none border-none hover:border-none rounded-none transition-all duration-500 transform hover:scale-110 group"
             >
               <RiMenu3Fill className="text-[#775636] group-hover:text-amber-700 transition-all duration-300 transform group-hover:rotate-180" />
             </button>
