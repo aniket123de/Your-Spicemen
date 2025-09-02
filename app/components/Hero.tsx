@@ -10,7 +10,7 @@ function Hero() {
       <div className="max-w-7xl mx-auto px-4 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:items-start h-full pt-8 sm:pt-12 lg:pt-16 xl:pt-20 pb-8">
           {/* Left Side - Text Content */}
-          <div className="space-y-4 sm:space-y-6 lg:pr-8 text-center lg:text-left order-2 lg:order-1">
+          <div className="space-y-4 sm:space-y-6 lg:pr-8 text-center lg:text-left order-1 lg:order-1">
             {/* Main Heading */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-elegant leading-tight" style={{ color: '#775636' }}>
               Your
@@ -67,7 +67,7 @@ function Hero() {
           </div>
 
           {/* Right Side - Hero Image */}
-          <div className="relative flex items-center justify-center order-1 lg:order-2 lg:pl-8 -mt-4 sm:-mt-6 lg:-mt-8">
+          <div className="relative flex items-center justify-center order-2 lg:order-2 lg:pl-8 -mt-4 sm:-mt-6 lg:-mt-8">
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-xl">
               {/* Elegant rectangular hero image frame */}
               <div className="relative overflow-hidden rounded-xl lg:rounded-2xl shadow-xl lg:shadow-2xl bg-brown p-1.5 sm:p-2 transform transition-all duration-500">
