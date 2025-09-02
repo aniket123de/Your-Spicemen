@@ -6,9 +6,9 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="relative min-h-[85vh] w-full overflow-visible mt-16 sm:mt-20 lg:mt-24 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section className="relative min-h-[85vh] w-full overflow-visible mt-24 sm:mt-28 lg:mt-24 bg-gradient-to-br from-amber-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:items-start h-full pt-8 sm:pt-12 lg:pt-16 xl:pt-20 pb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:items-start h-full pt-12 sm:pt-16 lg:pt-16 xl:pt-20 pb-8">
           {/* Left Side - Text Content */}
           <div className="space-y-4 sm:space-y-6 lg:pr-8 text-center lg:text-left order-1 lg:order-1">
             {/* Main Heading */}
