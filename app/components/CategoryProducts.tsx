@@ -14,6 +14,7 @@ function CategoryProducts({ category }: { category: string }) {
                   <ItemCard
                     key={data.id}
                     img={data.img.display}
+                    images={data.img.details}
                     name={data.name}
                     price={data.price}
                     url={data.url}
@@ -23,6 +24,7 @@ function CategoryProducts({ category }: { category: string }) {
                 <ItemCard
                   key={data.id}
                   img={data.img.display}
+                  images={data.img.details}
                   name={data.name}
                   price={data.price}
                   url={data.url}
