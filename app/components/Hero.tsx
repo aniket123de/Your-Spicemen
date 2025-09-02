@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="relative h-[85vh] w-full overflow-hidden mt-20 lg:mt-24 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section className="relative h-[85vh] w-full overflow-visible mt-20 lg:mt-24 bg-gradient-to-br from-amber-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start h-full pt-16 lg:pt-20">
           {/* Left Side - Text Content */}
@@ -67,21 +67,27 @@ function Hero() {
           </div>
 
           {/* Right Side - Hero Image */}
-          <div className="relative lg:pl-8 flex items-start justify-center h-full pt-8">
-            <div className="relative w-full max-w-lg -mt-20">
-              {/* Main hero image - rotated 250 degrees and zoomed */}
-              <div className="relative transition-transform duration-500 scale-125" style={{ transform: 'rotate(220deg) scale(1.25)' }}>
-                <Image
-                  src="/images/hero.png"
-                  alt="Premium Spices and Tea Collection"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                  priority
-                />
+          <div className="relative lg:pl-8 flex items-center justify-center h-full -mt-8">
+            <div className="relative w-full max-w-xl">
+              {/* Elegant rectangular hero image frame */}
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 transform transition-all duration-500">
+                <div className="relative overflow-hidden rounded-xl">
+                  <Image
+                    src="/images/hero.jpg"
+                    alt="Premium Spices and Tea Collection"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                  {/* Elegant overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                </div>
               </div>
               
-              {/* Additional decorative elements */}
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-amber-500 rounded-tl-lg"></div>
+              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-amber-500 rounded-br-lg"></div>
             </div>
           </div>
         </div>

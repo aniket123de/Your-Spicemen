@@ -11,7 +11,7 @@ module.exports = {
         'primary': {
           50: '#FAF7F3',   // lightest shade
           100: '#F5F0EA',  // very light
-          200: '#F0E9E0',  // main color
+          200: '#FFF9EC',  // main color
           300: '#E8DDD0',  // slightly darker
           400: '#DDD0BD',  // medium light
           500: '#D1C2AA',  // medium

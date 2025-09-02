@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function AboutUs() {
   return (
-    <section id="about-us" className="py-20 px-4 max-w-7xl mx-auto">
+    <section id="about-us" className="py-20 px-4 max-w-7xl mx-auto" style={{ backgroundColor: '#FFF9EC' }}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Image Side */}
         <div className="relative order-2 lg:order-1">

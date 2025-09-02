@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
+import Ribbon from "./components/Ribbon";
 import MobileNavbar from "./components/MobileNavbar";
 import Proud from "./components/ProudProducts";
 import Trending from "./components/Trending";
@@ -15,6 +16,7 @@ export default function Home() {
       <MobileNavbar />
       <Cart />
       <Hero />
+      <Ribbon />
       <div className="px-6 space-y-16 max-w-screen-xl m-auto">
         <AboutUs />
         <Proud />
